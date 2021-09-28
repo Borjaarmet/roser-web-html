@@ -1,0 +1,153 @@
+/*  ARTICULOS  */
+
+hr {
+  margin: 0 0 2rem 0;
+  height: 5px;
+  background-color: #fffce9;
+}
+
+.container-art {
+  margin: 5%;
+  padding: 4rem;
+}
+.container-card {
+  background: #fdf1e3;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.container-card ul li {
+  margin: 1rem 0 1rem 2rem;
+  font-size: 2.3vh;
+}
+.art-title {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.8vh;
+  font-family: "Gochi Hand", cursive;
+}
+.floated-element1 {
+  float: right;
+  height: 350px;
+  margin: 0px 0px 20px 30px;
+  padding: 0 0 10px;
+  width: 550px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 4px;
+}
+.floated-element2 {
+  float: left;
+  height: 400px;
+  margin: 0 30px 20px 0;
+  padding: 0 0 10px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 4px;
+}
+.floated-element3 {
+  float: right;
+  height: 350px;
+  margin: 0 0 20px 30px;
+  padding: 0 0 10px;
+  width: 550px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 4px;
+}
+.floated-element4 {
+  float: left;
+  height: 400px;
+  margin: 0 30px 20px 0;
+  padding: 0 0 10px;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 4px;
+}
+.floated-element5 {
+  float: right;
+  height: 350px;
+  margin: 0 0 20px 30px;
+  padding: 0 0 10px;
+  width: 550px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 4px;
+}
+.floated-element6 {
+  float: left;
+  height: 350px;
+  margin: 0 30px 20px 0;
+  padding: 0 0 10px;
+  width: 520px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 4px;
+}
+.art-text-small {
+  text-align: justify;
+  font-size: 2.1vh;
+  font-family: "Ubuntu", sans-serif;
+}
+.art-text-big {
+  text-align: justify;
+  font-size: 2.4vh;
+  font-family: "Ubuntu", sans-serif;
+}
+.articulo button {
+  padding: 0.5rem;
+  width: 50%;
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 769px) {
+  .container-art {
+    margin: 100px 0;
+    padding: 2rem;
+  }
+  .container-card {
+    background: rgb(220, 220, 205);
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+  .art-title {
+    font-size: 1rem;
+  }
+  .floated-element1 {
+    height: auto;
+    width: 100%;
+  }
+  .floated-element2 {
+    height: auto;
+    width: 100%;
+  }
+  .floated-element3 {
+    height: auto;
+    width: 100%;
+  }
+  .floated-element4 {
+    height: auto;
+    width: 100%;
+  }
+  .floated-element5 {
+    height: auto;
+    width: 100%;
+  }
+  .floated-element6 {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container-art {
+    margin-top: 100px;
+    padding: 1rem;
+  }
+  .container-card {
+    background: rgb(220, 220, 205);
+    padding: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+  .art-title {
+    font-size: 0.9rem;
+  }
+}

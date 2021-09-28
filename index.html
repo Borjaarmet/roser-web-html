@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/psicoterapia.css" />
+    <link rel="stylesheet" href="./css/trayectoria.css">
+    <link rel="stylesheet" href="./css/comoTrabajo.css">
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="stylesheet" href="./css/reflexiones.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/articulos.css">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <title>Roser web html-css-js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Roser Santonja Guillen</title>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
+        <span class="logo">RSG</span>
         <ul class="navbar__links">
+          <li>
+            <a href="#header"></a>
+          </li>
           <li>
             <a href="#psicoterapia">Psicoterapia</a>
           </li>
@@ -24,7 +42,7 @@
             <a href="#trayectoria">Trayectoria</a>
           </li>
           <li>
-            <a href="#comoTrabajo">Como Trabajo</a>
+            <a href="#comoTrabajo">Cómo Trabajo</a>
           </li>
           <li>
             <a href="#servicios">Servicios</a>
@@ -35,80 +53,75 @@
           <li>
             <a href="#contacto">Contacto</a>
           </li>
+          <li>
+            <div class="language">
+                <button>Idioma
+                <i class="fas fa-caret-down"></i>
+                </button>
+                <div>
+                    <span class="cat">Catalán</span>
+                    <input type="checkbox" class="check" checked> 
+                    <span class="es">Castellano</span>
+                </div>
+                
+            </div>
+          </li>
         </ul>
-        <!-- <div class="flags">
-          <button>
-            <img
-              src="./Images/flag-400 (1).png"
-              alt="Spain-flag"
-              height="22"
-              width="35"
-            />
-          </button>
-          <button>
-            <img
-              src="./Images/cat-flag (1).png"
-              alt="Cat-flag"
-              height="24"
-              width="35"
-            />
-          </button>
-        </div> -->
-        <!-- <div class="btn-lang">
-          <button>Idioma</button>
-        </div> -->
+        
         <div class="burguer-menu">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
+
       </nav>
+
       <section id="header" class="section">
-        <div class="header__image">
-          <!-- <div class="hero-image">
-            <div class="hero-text">
-              <h1 style="font-size:50px">I am Jane Doe</h1>
-              <h3>And I'm a Photographer</h3>
-              <button>Hire me</button>
-            </div>
-          </div> -->
+        <div class="header__image">  
           <div class="header__text">
-            <p>"Todos tenemos la oportunidad de cambiar"</p>
-            <img src="./Images/LOGO ROSER DEFI.png" />
-            <figure>
+            <h1>" Todos tenemos la oportunidad de cambiar "</h1>
+            <p>
               Roser Santonja Guillen, <br />
-              Psicologa general acreditada num: 14491
-            </figure>
+              <a href="http://www.infocop.es/view_article.asp?id=4670" target="blank">Psicologa general Sanitaria</a> acreditada num: 14491
+            </p>
           </div>
         </div>
       </section>
 
       <section id="psicoterapia" class="section">
         <h1>Qué es la psicoterapia ?</h1>
-        <p>
-          Desobedeciendo las recomendaciones de mi diseñador web, no he
-          elaborado un apartado de “quién soy yo” porque quien soy me lo quedo
-          para mí, pienso que lo útil es explicar mi manera de trabajar y he
-          intentado que esto se destile a lo largo de la página web. Siempre
-          estoy a tiempo de cambiar, y esto es algo que me gustaría resaltar:
-          siempre estamos a tiempo de cambiar, es en esto en lo que consiste un
-          proceso terapéutico.<br/> El proceso psicoterapéutico es un proceso de
-          cambio, de LIBERTAD. Se trata de darse cuenta de los patrones
-          instaurados y elegir de qué modo queremos funcionar. A veces nos vemos
-          atrapadas o atrapados realizando los mismos “bailes” con nosotros y
-          con los demás y no vemos el modo de salir de ahí. En ocasiones, no
-          vemos ni el “baile” que nos retiene.<br/> La psicoterapia genera y/o activa
-          tus propios recursos, tu conocimiento, lo que hay en TI para poder
-          escoger qué y cómo “bailar”.
-        </p>
+        <div>
+        
+          <p class="show-on-scroll">
+            Desobedeciendo las recomendaciones de mi diseñador web, no he
+            elaborado un apartado de “quién soy yo” porque quien soy me lo quedo
+            para mí.<br/> Pienso que lo útil es explicar mi manera de trabajar y he
+            intentado que esto se destile a lo largo de la página web. Siempre
+            estoy a tiempo de cambiar, y esto es algo que me gustaría resaltar:
+            <strong>SIEMPRE ESTAMOS A TIEMPO DE CAMBIAR</strong>.
+            Es en esto en lo que consiste un
+            proceso terapéutico.<br/> El proceso psicoterapéutico es un proceso de
+            cambio, de <strong>LIBERTAD</strong>. Se trata de darse cuenta de los patrones
+            instaurados y elegir de qué modo queremos funcionar. A veces nos vemos
+            atrapadas o atrapados realizando los mismos “bailes” con nosotros y
+            con los demás y no vemos el modo de salir de ahí. En ocasiones, no
+            vemos ni el “baile” que nos retiene.<br/> La psicoterapia genera y/o activa
+            tus propios recursos, tu conocimiento, lo que hay en <strong>TI</strong> para poder
+            escoger qué y cómo “bailar”.
+          </p>
+          <div class="parallax img-uno" id="m">
+            <div class="texto-interior"></div>
+          </div><!-- .parallax -->
+        </div> 
       </section>
+
       <section id="trayectoria" class="section">
         <h1>Trayectoria</h1>
         <div class="trayectoria__content">
-            <img class="trayectoria__image" src="./Images/Roser Santonja WEB (14).jpg" />
+            <img class="trayectoria__image show-on-scroll" src="./Images/Roser Santonja WEB (14).jpg"/>
             <p class="trayectoria__text">
-              Obtuve el grado de Psicología en la Universidad de
-              Barcelona (2004). A pesar de ser una maravillosa institución y
+              Obtuve el grado de Psicología en la <a href="http://www.infocop.es/view_article.asp?id=4670" target="blank">Universidad de
+                Barcelona</a>  (2004). A pesar de ser una maravillosa institución y
               contar con maestras y maestros de gran prestigio, tuve la
               sensación de no estar preparada al obtener el título.<br />
               Conseguí que me contratasen en el centro donde hice las prácticas
@@ -117,17 +130,19 @@
               práctica clínica y el trabajo en equipo fueron engrosando mi
               conocimiento y seguridad profesional.<br />
               He tenido el honor de poder beber de grandes profesionales. Son
-              muchos, aunque me gustaría resaltar estos tres maestros: Manuel
-              Villegas Besora, Luís Santiago o Lorna Smith Benjamin, ya que sus
+              muchos, aunque me gustaría resaltar estos tres maestros: <a href="https://www.herdereditorial.com/contributor/manuel-villegas" target="blank">Manuel
+                Villegas Besora</a> , <a href="https://www.kine.org/curriculums/luis-santiago-almazan" target="blank">Luís Santiago</a> o <a href="https://en.wikipedia.org/wiki/Lorna_Smith_Benjamin" target="blank">Lorna Smith Benjamin</a>, ya que sus
               enseñanzas vertebran mi práctica clínica. A Manel Villegas lo
-              conocí realizando el Máster de Terapia Cognitivo Social en la
+              conocí realizando el <a href="https://www.ub.edu/tpia_cognitivosocial/mtcsc/es/" target="blank">Máster de Terapia Cognitivo Social</a> en la
               Universidad de Barcelona (2007) y en sus numerosos seminarios
               sapienciales. A Luís Santiago, realizando diferentes estudios que
-              ofrece su centro Kine: Intervención Familiar
-              Sistémica (2012) Intervención con familias de adolescentes
-              problemáticos (2014), Terapia Breve Estratégica Centrada en
-              soluciones (2015). A Lorna Benjamín Smith cursando píldoras de
-              sabiduría en el Centro Hestía.<br />
+              ofrece su <a href="https://www.kine.org/index.php" target="blank">centro Kine</a>: <a href="https://www.kine.org/cursos-presenciales/curso-avanzado-II" target="b
+              ">Intervención Familiar
+                Sistémica (2012)</a>, <a href="https://www.kine.org/cursos-presenciales/curso-avanzado-II" target="blank">Intervención con familias de adolescentes
+                  problemáticos (2014)</a>, <a href="https://www.kine.org/cursos-online/terapia-breve-centrada-en-las-
+                  soluciones" target="blank">Terapia Breve Estratégica Centrada en
+                    soluciones (2015)</a>. A Lorna Benjamín Smith cursando píldoras de
+              sabiduría en el <a href="https://www.hestia.es" target="blank">Centro Hestía</a>.<br />
               La psicología es, a mi entender, una ciencia relativamente joven
               que está en constante desarrollo. Es por esto, que creo que
               quienes nos dedicamos a esta profesión tenemos que estar en
@@ -135,120 +150,111 @@
               conocimientos nuevos aprendizajes.<br />
               Actualmente:<br />
               <ul>
-                <li>Tengo mi consulta en el Barrio de Gràcia de Barcelona, en
-                    el Centro Balmes, donde acompaño a personas con diversas
+                <li>Tengo mi consulta en el Barrio de Gracia de Barcelona, en
+                    el <a href="https://www.centrebalmes.com/centro-psicologia-barcelona/" target="blank">Centro Balmes</a>, donde acompaño a personas con diversas
                     problemáticas de índole psicológica.</li>
-                <li>Dirijo el Centro khepra especializado en el trabajo con familias
+                <li>Dirijo el <a href="https://www.centrokhepra.com" target="blank">Centro khepra</a>  especializado en el trabajo con familias
                     y jóvenes con Trastornos Alimentarios y Trastornos de conducta.</li>
-                <li>Docente en el Máster Psicoterapia Constructivista, Sistémica y
-                    Existencial.
-                    https://www.fundacioudg.org/es/master-psicoterapia-constructivista-sistemica-existencial.html</li>
+                <li>Docente en el<a href="https://www.fundacioudg.org/es/master-psicoterapia-constructivista-sistemica-existencial.html" target="blank"> Máster Psicoterapia Constructivista, Sistémica y
+                  Existencial.</a> 
+                    </li>
               </ul>
             </p>
         </div>
       </section>
+
       <section id="comoTrabajo" class="section">
         <h1>¿Cómo Trabajo?</h1>
         <div class="comoTrabajo__content">
-            <img class="comoTrabajo__image" src="./Images/Roser Santonja WEB (13).jpg" />
+            <img class="comoTrabajo__image show-on-scroll" src="./Images/Roser Santonja WEB (13).jpg" />
             <p class="comoTrabajo__text">
-              Querer estar bien es un acto de amor y responsabilidad con uno
-              mismo y con el mundo. La orientación constructivista,
-              existencialista y sistémica me permite hacer mi trabajo con una
-              mirada hacia la persona y hacia el sistema en el que vive. De tu
+              <strong>Querer estar bien es un acto de amor y responsabilidad con uno
+                mismo y con el mundo</strong>. La orientación <a href="https://es.wikipedia.org/wiki/Constructivismo_(psicología)" target="blank">constructivista</a>,
+              <a href="https://es.wikipedia.org/wiki/Psicolog%C3%ADa_existencial" target="blank">existencialista</a> y <a href="https://es.wikipedia.org/wiki/Concepci%C3%B3n_de_salud_en_Psicolog%C3%ADa_sist%C3%A9mica" target="blank">sistémica</a> me permite hacer mi trabajo con una
+              mirada hacia la <strong>persona</strong> y hacia el <strong>sistema</strong> en el que vive. De tu
               historia, de cómo has construido tus experiencias, de los entornos
               en los que has vivido (los juegos que se han dado en tu familia,
               los roles que has establecido en las relaciones, las jerarquías
               explícitas o no, etc.). De todo ello, sacaremos el sentido de
               porqué te ocurre lo que te ocurre y, más importante aún,
               entenderemos cómo realizar el cambio que anhelas. Hago mías las
-              tres actitudes básicas que postulaba Carl Rogers:<br />
+              tres actitudes básicas que postulaba <a href="https://en.wikipedia.org/wiki/Carl_Rogers" target="blank">Carl Rogers</a>:<br />
                   - Aceptación incondicional, todas las personas somos dignas de
                     afecto.<br/>
                   - Empatía, entendida no como una actitud para gustarte sino para
                     serte útil, para conseguir tu bienestar.<br/>
                   - Autenticidad, honestidad y coherencia.
-   
-              
-             
-              
             </p>
         </div>
       </section>
+
       <section id="servicios" class="section">
         <h1>Servicios</h1>
-        <div class="servicios__content">
-            <div class="terapia">  
-              <div class="terapia-title">
+        <h3>( * Cualquiera de los servicios se pueden hacer de forma tanto online como presencial )</h3>
+
+        <div class="servicios__content show-on-scroll">
+          <div class="card">
+            <div class="image">
                 <h2>Terapia individual</h2>
-              </div>
-              <div class="terapia-text">
-                <p>
-                Se trata de un proceso en el que la persona se conoce, toma
-                conciencia de cómo funciona y en el que genera todo lo necesario
-                para conseguir el cambio que quiere y olvidarse de quedarse
-                encallada en viejos escollos.
-                </p>
-              </div>
-              <div class="terapia-img">
-               <img  src="Images/Roser Santonja WEB (1).jpg" /> 
+                <img  src="/Images/Roser Santonja WEB (1).jpg" /> 
+            </div>
+            <div class="details">
+              <div class="center">
+                <p> Se trata de un proceso en el que la persona se conoce, toma
+                    conciencia de cómo funciona y en el que genera todo lo necesario
+                    para conseguir el cambio que quiere y olvidarse de quedarse
+                    encallada en viejos escollos.</p>
               </div>
             </div>
-          
-            <div class="terapia">
-                <div class="terapia-title">
-                    <h2>Terapia de pareja</h2>
-                </div>
-                <div class="terapia-img">
-                    <img src="/Images/Roser Santonja WEB (19).jpg"/>
-                </div>
-                <div class="terapia-text">
-                    <p>
-                    Es posible trabajar con la familia, aunque no estén todos
-                    presente. Puede que una hija o hijo adolescente no quiera asistir
-                    y, si son muy pequeños, es mejor dejarlos al margen. Trabajar con
+          </div>
+
+          <div class="card">
+            <div class="image">
+                <h2>Terapia de pareja</h2>
+                <img src="/Images/Roser Santonja WEB (19).jpg"/>
+            </div>
+            <div class="details">
+              <div class="center">
+                <p>  Se puede acudir a terapia de pareja para solventar problemas
+                    conyugales, para mejorar, e incluso para cerrar una relación de
+                    una manera sana.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="card">
+            <div class="image">
+                <h2>Terapia familiar</h2>
+                <img  src="/Images/Roser Santonja WEB (16).jpg" /> 
+            </div>
+            <div class="details">
+              <div class="center">
+                <p>  Es posible trabajar con la familia, aunque no estén todos
+                    presente. Trabajar con
                     la familia es una oportunidad de oro ya que acelera y potencia los
                     resultados. Cada vez son más los padres que desde una actitud de
-                    humildad se dan cuenta que pueden ayudar muchísimo a sus hijos.
-                    </p>
-                </div> 
-                
-               
+                    humildad se dan cuenta que pueden ayudar muchísimo a sus hijos. </p>
+              </div>
             </div>
-            <div class="terapia">
-                <div class="terapia-title">
-                    <h2>Terapia familiar</h2>
-                </div>
-                <div class="terapia-text">
-                    <p>
-                    Se puede acudir a terapia de pareja para solventar problemas
-                    conyugales, para mejorar, e incluso para cerrar una relación de
-                    una manera sana.
-                    </p>
-                </div>
-                <div class="terapia-img">
-                    <img src="/Images/Roser Santonja WEB (16).jpg" >
-                   
-                </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+                <h2>Terapia en grupo</h2>
+                <img  src="/Images/Roser Santonja WEB (7).jpg"/> 
             </div>
-            <div class="terapia">
-                <div class="terapia-title">
-                    <h2>Terapia en grupo</h2>
-                </div>
-                <div class="terapia-img">
-                    <img src="/Images/Roser Santonja WEB (7).jpg"/>
-                </div>
-                <div class="terapia-text">
-                    <p>
-                    Las sesiones grupales permiten trabajar en vivo y en directo las
+            <div class="details">
+              <div class="center">
+                <p>  Las sesiones grupales permiten trabajar en vivo y en directo las
                     relaciones sociales y enriquecerse de las opiniones, las
                     experiencias y el acompañamiento de las personas que forman el
-                    grupo.
-                    </p>
-                </div>
+                    grupo.</p>
+              </div>
             </div>
+          </div> 
         </div>
       </section>
+
       <section id="reflexiones" class="section">
         <h1>Reflexiones</h1>
         <p class="reflexiones-p1">Esta sección la he elaborado con dos propósitos. Por un lado, dar a conocer de manera más tangible mi manera de trabajar
@@ -260,66 +266,107 @@
             algunos años sufriendo, tenemos una manera de funcionar integrada en nosotros a lo largo de los años. Si nuestra intención
             es hacer un cambio sólido y que dure en el tiempo, a veces el proceso se alargará. Esto dependerá de muchos factores como
             la motivación y el esfuerzo y también, por supuesto, de la destreza del terapeuta. Cada paciente que se sienta bien,
-            que te habla del cambio que ha producido, da sentido a nuestra profesión. E interesa hacer este cambio de la forma más 
-            eficiente posible por el bienestar de la persona por su tiempo y también, por qué no decirlo, por el coste económico. Pero sobre todo interesa hacerlo bien.
+            que te habla del cambio que ha producido, da sentido a nuestra profesión. 
         </p>
-        <div class="reflexiones-content">
-            <!-- <div class="scrolling-wrapper"> -->
-        <div class="articulo art-1">
-            <a href="/articulo1.html">
-                <h4>DIAGNÓSTICO CLÁSICO<br/> VS <br/>DIAGNÓSTICO RELACIONAL</h4>
-            </a>
-        </div>
-        <div class="articulo">
-            <a href="/articulo2.html">
-                <h4>LUZ DE GAS</h4>
-            </a>
-        </div>
+        <div class="reflexiones-content show-on-scroll">
+            
+          <div class="articulo art-1">
+              <a href="/articulo1.html">
+                  <h4>DIAGNÓSTICO CLÁSICO<br/> VS <br/>DIAGNÓSTICO RELACIONAL</h4>
+              </a>
+          </div>
+
+          <div class="articulo art-2">
+              <a href="/articulo2.html">
+                  <h4>LUZ DE GAS</h4>
+              </a>
+          </div>
+          
+          <div class="articulo art-3">
+              <a href="/articulo3.html">
+                  <h4>HIJO DORADO<br/> Y<br/> CHIVO EXPIATORIO</h4>
+              </a>
+          </div>
         
-        <div class="articulo">
-            <a href="/articulo3.html">
-                <h4>HIJO DORADO<br/> Y<br/> CHIVO EXPIATORIO</h4>
-            </a>
+          <div class="articulo art-4">
+              <a href="/articulo4.html">
+                  <h4>¿EMPATÍA O QUERER GUSTAR<br/> Y <br/>PÁNICO AL CONFLICTO?</h4>
+              </a>
+          </div>
+          
+          <div class="articulo art-5">
+              <a href="/articulo5.html">
+                  <h4>SOBREPROTECCIÓN <br/>Y<br/> NEGLIGENCIA</h4>
+              </a>
+          </div>
+          
+          <div class="articulo art-6">
+              <a href="/articulo6.html">
+                  <h4>LA ALTA FACTURA DE<br/> EVITAR EL DOLOR</h4>
+              </a>
+          </div>
+  
         </div>
-       
-        <div class="articulo">
-            <a href="/articulo4.html">
-                <h4>¿EMPATÍA O QUERER GUSTAR<br/> Y <br/>PÁNICO AL CONFLICTO?</h4>
-            </a>
-        </div>
-        
-        <div class="articulo">
-            <a href="/articulo5.html">
-                <h4>SOBREPROTECCIÓN <br/>Y<br/> NEGLIGENCIA</h4>
-            </a>
-        </div>
-        
-        <div class="articulo">
-            <a href="/articulo6.html">
-                <h4>LA ALTA FACTURA DE<br/> EVITAR EL DOLOR</h4>
-            </a>
-        </div>
-    <!-- </div> -->
-    </div>
       </section>
+
       <section id="contacto" class="section">
         <h1>Contacto</h1>
-        <form class="form">
+        <div id="error"></div>
+        <form id="form" class="form" action="/" method="GET" >
             <h2>Construyamos algo juntos</h2>
-            <!-- <img src="./Images/LOGO ROSER DEFI.png"/> -->
-            <p><input placeholder="Nombre"></input></p>
-            <p><input placeholder="Email"></input></p>
-            <p><input placeholder="Escribe tu mensaje aqui.."></input></p>
-            <button>Enviar</button>
+            <hr/>
+            <img src="./Images/LOGO ROSER DEFI.png"/>
+            <label for="name">Nombre completo <span>*</span></label>
+            <p><input id="name" name="name" required type="text" placeholder="Nombre" title="Introduce tu nombre completo"></input></p>
+            <label for="email">Correo electrónico <span>*</span></label>
+            <p><input id="email" name="email" required type="text" placeholder="E-mail" title="Introduce tu correo electrónico"></input></p>
+            <label for="message">Mensaje</label>
+            <p><input id="message" name="message" placeholder="Escribe tu mensaje aquí..."></input></p>
+            <button type="submit">Enviar</button>
+            <a href="mailto:info@rosersantonjaguillen.com" id="truco"></a>
             <div>
-              <i class="fa fa-phone"> 001 1023 567</i>
-              <i class="fa fa-envelope-o">contact@company.com</i> 
-              <i class="fab fa-linkedin"></i>
+              <a href="https://chatwith.io/s/rsg" target="blank" class="fab fa-whatsapp"></a>
+              <a href="https://linkedin.com/in/rosersantonja" class="fab fa-linkedin"></a>
             </div>
-        </form>
+        </form> 
       </section>
-    </div>
 
-    <script src="main.js"></script>
+      <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <img class="about" src="./Images/LOGO ROSER DEFI.png" /> 
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <p>
+              <i class="fa fa-map-marker"></i>
+              <a href="https://www.google.com/maps/place/Pla%C3%A7a+de+Gal%C2%B7la+Plac%C3%ADdia,+10,+08006+Barcelona/@41.3991111,2.1512348,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a298491d5cc7:0xafd0f52eca70a948!8m2!3d41.3991111!4d2.1534235" target="blank"> Plaza Gal·la Placídia 10, Barcelona</a>
+            </p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p><a href="https://chatwith.io/s/rsg" target="blank"> 616 84 23 11</a></p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> office@company.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h4> <a href="http://www.infocop.es/view_article.asp?id=4670" target="blank">Psicóloga General Sanitaria</a> acreditada núm: 14491</h4>
+          <p class="menu">
+            <a href="#header"> Inicio</a> |
+            <a href="#psicoterapia"> Psicoterapia</a> |
+            <a href="#trayectoria"> Trayectoria</a> |
+            <a href="#comoTrabajo"> Cómo Trabajo</a> |
+            <a href="#servicios"> Servicios</a> |
+            <a href="#reflexiones"> Reflexiones</a> |
+            <a href="#contacto"> Contacto</a>
+          </p>
+          <p class="name"><i> R</i>oser <i>S</i>antonja <i>G</i>uillen &copy; 2021</p>
+        </div>
+      </footer>
+    </div>
+  
+    <script src="./js/main.js"></script>
   </body>
 </html>

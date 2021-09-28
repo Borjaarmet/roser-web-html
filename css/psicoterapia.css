@@ -1,0 +1,64 @@
+/*  Section Psicoterapia  */
+
+section#psicoterapia {
+  background: #fffce9;
+  padding: 0 5%;
+}
+
+section#psicoterapia p {
+  background: rgba(255, 252, 233, 0.9);
+  border-radius: 5px;
+  padding: 1rem 5rem 2rem 5rem;
+  text-align: center;
+  line-height: 1.6rem;
+  font-size: 2.1vh;
+  font-family: "Ubuntu", sans-serif;
+  animation: psicoTextMove 2s ease-in;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 17rem;
+  width: 100vw;
+  position: relative;
+  opacity: 0.6;
+}
+.img-uno {
+  background-image: url("../Images/parallax.jpeg");
+}
+
+@media screen and (max-width: 1024px) {
+  section#psicoterapia p {
+    font-size: 1.8vh;
+    line-height: 1.3rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  section#psicoterapia p {
+    font-size: 1.8vh;
+    line-height: 1.2rem;
+    padding: 0.7rem 2.5rem 1rem 2.5rem;
+  }
+  .parallax {
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  section#psicoterapia p {
+    font-size: 1.8vh;
+    line-height: 1.2rem;
+    padding: 0.7rem 1rem 1rem 1rem;
+  }
+}
+@keyframes psicoTextMove {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
