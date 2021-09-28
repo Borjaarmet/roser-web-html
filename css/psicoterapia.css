@@ -28,6 +28,16 @@ section#psicoterapia p {
 .img-uno {
   background-image: url("../Images/parallax.jpeg");
 }
+@keyframes psicoTextMove {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
 @media screen and (max-width: 1024px) {
   section#psicoterapia p {
@@ -51,14 +61,21 @@ section#psicoterapia p {
     line-height: 1.2rem;
     padding: 0.7rem 1rem 1rem 1rem;
   }
-}
-@keyframes psicoTextMove {
-  from {
-    opacity: 0;
-    transform: translateX(200px);
+
+  section#psicoterapia {
+    background: #fffce9;
+    padding: 0 5%;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
+  .parallax {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10rem;
+    width: 100vw;
+    position: relative;
+    opacity: 0.6;
+  }
+  .img-uno {
+    background-image: url("../Images/parallax.jpeg");
   }
 }
