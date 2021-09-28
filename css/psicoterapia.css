@@ -28,16 +28,6 @@ section#psicoterapia p {
 .img-uno {
   background-image: url("../Images/parallax.jpeg");
 }
-@keyframes psicoTextMove {
-  from {
-    opacity: 0;
-    transform: translateX(200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
 
 @media screen and (max-width: 1024px) {
   section#psicoterapia p {
@@ -79,3 +69,13 @@ section#psicoterapia p {
     background-image: url("../Images/parallax.jpeg");
   }
 }
+/* @keyframes psicoTextMove {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+} */

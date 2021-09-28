@@ -61,7 +61,7 @@ section#comoTrabajo {
   }
   .comoTrabajo__image {
     float: none;
-    width: 100%;
+    width: 90%;
     border: 0.5em solid #fff;
     border-bottom: 2em solid #fff;
   }
