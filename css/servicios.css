@@ -3,9 +3,17 @@
 /* terapia card */
 
 section#servicios {
-  background: #e5d9cc;
+  background: rgb(229, 217, 204);
+  background: linear-gradient(
+    0deg,
+    rgba(229, 217, 204, 1) 0%,
+    rgba(255, 252, 233, 1) 100%
+  );
   padding: 0 5%;
   display: flex;
+}
+section#servicios h5 {
+  font-size: 18px;
 }
 
 .servicios__content {
@@ -96,6 +104,10 @@ section#servicios {
   padding: 0;
   font-size: 2vh;
   color: #262626;
+}
+.is-visible {
+  opacity: 1;
+  transform: translateX(-200px);
 }
 
 @media screen and (max-width: 769px) {

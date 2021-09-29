@@ -32,6 +32,10 @@ section#trayectoria {
   border-bottom: 3em solid #fff;
   opacity: 1;
 }
+.is-visible {
+  opacity: 1;
+  transform: translateX(200px);
+}
 
 @media screen and (max-width: 1024px) {
   .trayectoria__text {

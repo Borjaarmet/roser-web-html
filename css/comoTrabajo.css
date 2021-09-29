@@ -1,7 +1,12 @@
 /*  Section ComoTrabajo  */
 
 section#comoTrabajo {
-  background: #fffce9;
+  background: rgb(255, 252, 233);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 252, 233, 1) 0%,
+    rgba(229, 217, 204, 1) 100%
+  );
   padding: 0 5%;
   display: flex;
 }
@@ -25,6 +30,10 @@ section#comoTrabajo {
   border: 1em solid #fff;
   border-bottom: 4em solid #fff;
   opacity: 1;
+}
+.is-visible {
+  opacity: 1;
+  transform: translateX(-200px);
 }
 
 @media screen and (max-width: 769px) {
