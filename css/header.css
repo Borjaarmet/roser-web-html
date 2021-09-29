@@ -5,11 +5,10 @@ section#header {
   top: 80px;
   background-image: url("../Images//Roser\ Santonja\ HD\ \(22\).jpg");
   background-position: center;
-
   background-size: cover;
   background-repeat: no-repeat;
   zoom: unset;
-  border-radius: 0 0 85% 85% / 20%;
+  border-radius: 0 95% 95% 95% / 15%;
 }
 .header__text {
   text-align: center;
@@ -46,6 +45,7 @@ section#header {
 @media screen and (max-width: 769px) {
   section#header {
     top: 60px;
+    border-radius: 0 95% 95% 95% / 10%;
   }
   .header__text h1 {
     font-size: 6vh;

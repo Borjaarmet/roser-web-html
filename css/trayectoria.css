@@ -1,7 +1,12 @@
 /*  Section Trayectoria  */
 
 section#trayectoria {
-  background: #e5d9cc;
+  background: rgb(229, 222, 204);
+  background: linear-gradient(
+    0deg,
+    rgba(229, 222, 204, 1) 0%,
+    rgba(255, 252, 233, 1) 100%
+  );
   padding: 0 5%;
   display: flex;
 }

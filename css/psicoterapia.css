@@ -1,12 +1,17 @@
 /*  Section Psicoterapia  */
 
 section#psicoterapia {
-  background: #fffce9;
+  background: rgb(255, 252, 233);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 252, 233, 1) 0%,
+    rgba(229, 222, 204, 1) 100%
+  );
   padding: 0 5%;
 }
 
 section#psicoterapia p {
-  background: rgba(255, 252, 233, 0.9);
+  /* background: rgba(255, 252, 233, 0.9); */
   border-radius: 5px;
   padding: 1rem 5rem 2rem 5rem;
   text-align: center;
@@ -31,14 +36,14 @@ section#psicoterapia p {
 
 @media screen and (max-width: 1024px) {
   section#psicoterapia p {
-    font-size: 1.8vh;
-    line-height: 1.3rem;
+    font-size: 1.9vh;
+    line-height: 1.5rem;
   }
 }
 @media screen and (max-width: 769px) {
   section#psicoterapia p {
-    font-size: 1.8vh;
-    line-height: 1.2rem;
+    font-size: 1.9vh;
+    line-height: 1.5rem;
     padding: 0.7rem 2.5rem 1rem 2.5rem;
   }
   .parallax {

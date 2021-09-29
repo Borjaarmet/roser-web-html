@@ -11,13 +11,14 @@ hr {
   padding: 4rem;
 }
 .container-card {
-  background: #fdf1e3;
+  background: #e5decc;
   padding: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
 .container-card ul li {
   margin: 1rem 0 1rem 2rem;
   font-size: 2.3vh;
+  font-family: "Ubuntu", "sans-serif";
 }
 .art-title {
   text-align: center;
@@ -89,13 +90,7 @@ hr {
   font-size: 2.4vh;
   font-family: "Ubuntu", sans-serif;
 }
-.articulo button {
-  padding: 0.5rem;
-  width: 50%;
-  align-self: center;
-  border-radius: 5px;
-  border: none;
-}
+
 @media screen and (max-width: 1024px) {
 }
 

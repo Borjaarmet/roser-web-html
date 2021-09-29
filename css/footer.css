@@ -1,5 +1,6 @@
 .footer {
   background-color: rgba(255, 252, 233, 0.9);
+
   width: 100%;
   text-align: left;
   font-family: sans-serif;
@@ -178,6 +179,9 @@
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+  }
+  .footer-right h4 {
+    font-size: 12px;
   }
   .footer .footer-center i {
     margin-left: 0;
