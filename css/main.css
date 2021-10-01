@@ -1,12 +1,21 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+} */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
   box-sizing: border-box;
   font-size: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   font-family: "Gochi Hand", cursive;
@@ -46,7 +55,7 @@ section p {
   font-size: 1rem;
 }
 a {
-  color: #f0bf45;
+  color: #eeb628;
   text-decoration: none;
   font-weight: bold;
 }

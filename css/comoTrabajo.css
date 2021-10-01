@@ -7,6 +7,9 @@ section#comoTrabajo {
   padding: 0 5%;
   display: flex;
 }
+.title-comoTrabajo {
+  margin-bottom: 50px;
+}
 .comoTrabajo__text {
   text-align: justify;
   font-size: 1.5vw;
@@ -30,13 +33,13 @@ section#comoTrabajo {
 }
 .is-visible {
   opacity: 1;
-  transform: translateX(200px);
+  transform: translateX(-400px);
 }
 
 @media screen and (max-width: 769px) {
   .comoTrabajo__text {
     text-align: justify;
-    font-size: 2vw;
+    font-size: 2.4vw;
   }
   .comoTrabajo__image {
     /* width: 70%; */

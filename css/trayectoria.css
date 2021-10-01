@@ -31,7 +31,7 @@ section#trayectoria {
   border-radius: 4px;
   transform: rotateZ(3deg);
   transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-    opacity 1s 0.75s ease-out;
+    opacity 4s 0.75s ease-out;
   will-change: transform, opacity;
   border: 1em solid #fff;
   border-bottom: 3em solid #fff;
@@ -39,7 +39,7 @@ section#trayectoria {
 }
 .is-visible {
   opacity: 1;
-  transform: translateX(200px);
+  transform: translateX(-400px);
 }
 
 @media screen and (max-width: 1024px) {
@@ -63,6 +63,7 @@ section#trayectoria {
   .trayectoria__image {
     border: 0.6em solid #fff;
     border-bottom: 1em solid #fff;
+    width: 40%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -81,5 +82,9 @@ section#trayectoria {
     border: 0.3em solid #fff;
     border-bottom: 0.7em solid #fff;
     width: 60%;
+  }
+  .is-visible {
+    opacity: 0.5;
+    transform: none;
   }
 }

@@ -183,7 +183,7 @@
   }
   .navbar__links {
     position: absolute;
-    top: 8vh;
+    top: 4vh;
     right: 0px;
     height: 92vh;
     background: rgba(255, 252, 233, 0.9);
@@ -197,7 +197,7 @@
   }
   .navbar__links li {
     opacity: 0;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .navbar__links li a {
     font-size: 18px;
@@ -236,11 +236,11 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   .es {
-    color: #fff;
+    color: rgb(61, 61, 61);
     font-size: 1.5vh;
   }
   .cat {
-    color: #fff;
+    color: rgb(61, 61, 61);
     font-size: 1.5vh;
   }
 }
@@ -254,8 +254,11 @@
     width: 180px;
     height: 100px;
   }
+  .navbar__links li {
+    margin-bottom: 50px;
+  }
   .navbar__links li a {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

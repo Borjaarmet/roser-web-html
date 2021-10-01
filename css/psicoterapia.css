@@ -15,7 +15,7 @@ section#psicoterapia p {
   border-radius: 5px;
   padding: 1rem 5rem 2rem 5rem;
   text-align: center;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
   font-size: 2.1vh;
   font-family: "Ubuntu", sans-serif;
   animation: psicoTextMove 2s ease-in;
@@ -25,10 +25,10 @@ section#psicoterapia p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 17rem;
+  height: 18rem;
   width: 100vw;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.2;
 }
 .img-uno {
   background-image: url("../Images/parallax.jpeg");
