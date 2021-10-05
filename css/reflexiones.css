@@ -64,11 +64,11 @@ section#reflexiones {
 .contenedor figure:hover > img {
   transform: scale(1.3);
 }
-.contenedor figure:hover > .capa .h4 {
+.contenedor figure:hover > .capa h4 {
   margin-top: 40px;
   margin-bottom: 15px;
 }
-.contenedor figure .capa .h4 {
+.capa .h4 {
   color: #fff;
   font-weight: 400;
   margin-bottom: 120px;
