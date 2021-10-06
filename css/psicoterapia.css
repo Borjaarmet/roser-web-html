@@ -42,33 +42,27 @@ section#psicoterapia p {
 }
 @media screen and (max-width: 769px) {
   section#psicoterapia p {
-    font-size: 1.9vh;
-    line-height: 1.5rem;
+    font-size: 1.8vh;
+    line-height: 1.2rem;
     padding: 0.7rem 2.5rem 1rem 2.5rem;
   }
   .parallax {
-    height: 15rem;
+    height: 12rem;
   }
 }
 @media screen and (max-width: 480px) {
   section#psicoterapia p {
-    font-size: 1.8vh;
+    font-size: 2.2vh;
     line-height: 1.2rem;
     padding: 0.7rem 1rem 1rem 1rem;
   }
 
   section#psicoterapia {
     background: #fffce9;
-    padding: 0 5%;
+    padding: 0 2%;
   }
   .parallax {
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 10rem;
-    width: 100vw;
-    position: relative;
-    opacity: 0.6;
+    display: none;
   }
   .img-uno {
     background-image: url("../Images/parallax.jpeg");

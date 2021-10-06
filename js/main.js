@@ -24,6 +24,16 @@ const navSlide = () => {
 
 navSlide();
 
+//button info
+
+function hideBtn() {
+  const btnInfo = document.querySelector(".btn-info");
+  btnInfo.addEventListener("click", () => {
+    btnInfo.style.display = "none";
+  });
+}
+hideBtn();
+
 // button language
 
 const check = document.querySelector(".check");

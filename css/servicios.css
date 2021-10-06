@@ -1,13 +1,10 @@
 /*  Section Servicios  */
 
-/* terapia card */
-
 section#servicios {
   background: #e5decc;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   padding: 0 20%;
-  /* display: flex; */
 }
 .p-servicios {
   margin: 1rem;
@@ -24,6 +21,9 @@ section#servicios {
   padding: 1rem;
   width: 45%;
 }
+.btn-info {
+  opacity: 0;
+}
 @media screen and (max-width: 1024px) {
   section#servicios {
     padding: 0 15%;
@@ -32,6 +32,9 @@ section#servicios {
 @media screen and (max-width: 900px) {
   section#servicios {
     padding: 0 10%;
+  }
+  .terapia-card {
+    width: 45%;
   }
 }
 @media screen and (max-width: 760px) {
@@ -43,11 +46,6 @@ section#servicios {
     padding: 0 5%;
   }
 }
-@media screen and (min-width: 900px) {
-  .terapia-card {
-    width: 45%;
-  }
-}
 @media screen and (max-width: 480px) {
   .servicios__content {
     max-width: 100vw;
@@ -56,8 +54,6 @@ section#servicios {
     margin-top: 20px;
     overflow: auto;
     position: relative;
-    scrollbar-color: #d5ac68 #f1db9d;
-    scrollbar-width: thin;
     -ms-overflow-style: none;
     border: none;
     border-radius: 5px;
@@ -71,15 +67,37 @@ section#servicios {
     width: 90%;
     height: 180px;
     cursor: pointer;
-    font-size: 3.3vw;
-    margin-bottom: 80px;
+    font-size: 3.6vw;
+    margin-bottom: 120px;
   }
+  .terapia-card .title {
+    border-radius: 2px;
+    margin-bottom: 0;
+  }
+  .btn-info {
+    opacity: 1;
+    padding: 0.6rem 1rem;
+    position: absolute;
+    top: 82%;
+    left: 37%;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
   .terapia-card .title {
     border: none;
     border-radius: 4px;
   }
+
   .content-text {
     display: block;
+  }
+  .content-details p {
+    color: #fff;
+    font-size: 24px;
   }
 }
 
@@ -89,7 +107,7 @@ section#servicios {
   background-color: #fffce9;
   border-radius: 95% 95% 95% 95% / 50%;
   padding: 0.7rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .content {
@@ -179,253 +197,3 @@ section#servicios {
 .fadeIn-right {
   left: 80%;
 }
-/* section#servicios p {
-  font-size: 18px;
-  font-family: "Ubuntu", "sans-serif";
-}
-
-.servicios__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  font-family: "Ubuntu", sans-serif;
-  transform: translate(0px, 0%);
-  transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-    opacity 0.8s 0.45s ease-out;
-  will-change: transform, opacity;
-  opacity: 1;
-}
-
-.c-img {
-  position: relative;
-  width: 35%;
-  height: 260px;
-  background: #fffce9;
-  margin: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  border-radius: 10px;
-  border-radius: 20px;
-  width: 100px;
-}
-.card .image {
-  width: auto;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.image h2 {
-  margin-bottom: rem;
-  padding: 0.3rem;
-  font-size: 3vh;
-  text-align: center;
-  align-self: center;
-  font-weight: bold;
-}
-.card .image img {
-  height: auto;
-  width: 100%;
-  transition: 0.5s;
-}
-.card:hover .image img {
-  opacity: 0.5;
-  transform: translateX(30%); 
-}
-.card .details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  background: #fffce9;
-  border-radius: 10px;
-  transition: 0.5s;
-  transform-origin: left;
-  transform: perspective(2000px) rotateY(-90deg);
-}
-.card:hover .details {
-  transform: perspective(2000px) rotateY(0deg);
-}
-.card .details .center {
-  padding: 10px;
-  text-align: center;
-  background: #fffce9;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.card .details .center h2 {
-  margin: 0;
-  padding: 0.5rem;
-  color: rgb(61, 61, 61);
-  background: rgba(186, 176, 156, 0.9);
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-.card .details .center h2 span {
-  font-size: 14px;
-  color: #262626;
-}
-.card .details .center p {
-  margin: 5px 0;
-  line-height: 1.5;
-  padding: 0;
-  font-size: 2vh;
-  color: #262626;
-}
-
-@media screen and (max-width: 769px) {
-  .card {
-    width: 40%;
-    height: 280px;
-    margin: 0.6rem;
-  }
-  .card .image {
-    width: auto;
-    height: 100%;
-    overflow: hidden;
-    color: rgb(61, 61, 61);
-  }
-  .image h2 {
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-  }
-  .card .image img {
-    height: auto;
-    width: 100%;
-    transition: 0.5s;
-  }
-  .card:hover .image img {
-    opacity: 0.5;
-    transform: translateX(30%); 
-  }
-  .card .details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    background: #fffce9;
-    transition: 0.5s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
-  }
-  .card:hover .details {
-    transform: perspective(2000px) rotateY(0deg);
-  }
-  .card .details .center {
-    padding: 10px;
-    text-align: center;
-    background: #fffce9;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .card .details .center p {
-    margin: 5px 0;
-    line-height: 1.5;
-    padding: 0;
-    font-size: 1.7vh;
-    color: #262626;
-  }
-}
-@media screen and (max-width: 480px) {
-  section#servicios h5 {
-    font-size: 10px;
-  }
-  .servicios__content {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: "Ubuntu", sans-serif;
-    transform: translate(0px, 0%);
-    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-      opacity 0.8s 0.45s ease-out;
-    will-change: transform, opacity;
-    opacity: 1; 
-    overflow: auto;
-    white-space: nowrap;
-    padding: 15px 5px 15px 5px;
-    background: transparent;
-    height: 500px;
-    border-radius: 15px;
-    border: 1px solid black;
-  }
-  .scroll-container{
-    overflow: auto;
-    white-space: nowrap;
-    padding: 5px 70px 5px 20px;
-    background: transparent;
-    height: 100%;
-    border-radius:15px;
-  }
-  
-  .gridscroll{
-    display:inline-block;
-  }
-  .card {
-    width: 80%;
-    height: 220px;
-    margin: 0.4rem;
-    display: inline-block;
-    justify-self: center;
-    width: 95%;
-    height: 50%;
-    margin-bottom: 20px;
-  }
-  .card .image {
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    color: rgb(61, 61, 61);
-  }
-  .image h2 {
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-  }
-  .card .image img {
-    height: auto;
-    width: 100%;
-    transition: none;
-  }
-  .card:hover .image img {
-    opacity: 0.5;
-    transform: none; 
-  }
-  .card .details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fffce9;
-    transition: 0.5s;
-    transform-origin: left;
-    transform: none;
-  }
-  .card:hover .details {
-    transform: none;
-  }
-  .card .details .center {
-    padding: 10px;
-    width: 250px;
-    text-align: center;
-    background: #fffce9;
-    position: absolute;
-    top: 20%;
-    transform: none;
-  }
-
-  .card .details .center p {
-    margin: 5px 0;
-    line-height: 1.5;
-    padding: 0;
-    font-size: 1.5vh;
-    color: #262626;
-    width: 200px;
-  }
-} */
