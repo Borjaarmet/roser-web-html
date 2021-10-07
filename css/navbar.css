@@ -185,7 +185,7 @@
     position: absolute;
     top: 4vh;
     right: 0px;
-    height: 96vh;
+    height: 84vh;
     background: rgba(255, 252, 233, 0.9);
     display: flex;
     flex-direction: column;
@@ -259,6 +259,9 @@
   }
   .language div span {
     font-size: 16px;
+  }
+  .language button {
+    font-size: 1rem;
   }
   .navbar__links {
     display: flex;

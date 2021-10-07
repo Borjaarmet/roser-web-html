@@ -22,16 +22,16 @@ section#psicoterapia p {
 }
 .parallax {
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   height: 16rem;
   width: 100vw;
   position: relative;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 .img-uno {
-  background-image: url("../Images/parallax.jpeg");
+  background-image: url("../Images/foto\ web\ geno.jpg");
 }
 
 @media screen and (max-width: 1024px) {
