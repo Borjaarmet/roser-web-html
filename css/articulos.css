@@ -92,6 +92,10 @@ hr {
 }
 
 @media screen and (max-width: 1024px) {
+  .container-art {
+    margin: 100px 0;
+    padding: 2rem;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -107,6 +111,8 @@ hr {
   .art-title {
     font-size: 1rem;
   }
+}
+@media screen and (max-width: 480px) {
   .floated-element1 {
     height: auto;
     width: 100%;
@@ -131,8 +137,6 @@ hr {
     height: auto;
     width: 100%;
   }
-}
-@media screen and (max-width: 480px) {
   .container-art {
     margin-top: 100px;
     padding: 1rem;

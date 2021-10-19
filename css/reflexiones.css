@@ -38,7 +38,7 @@ section#reflexiones {
   height: 150px;
   width: 280px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 14px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 }
 .contenedor figure img {
@@ -62,17 +62,7 @@ section#reflexiones {
 .contenedor figure:hover > img {
   transform: scale(1.3);
 }
-/* .contenedor figure:hover > .capa {
-  opacity: 1;
-  visibility: visible;
-}
-.contenedor figure:hover > img {
-  transform: scale(1.3);
-}
-.contenedor figure:hover > .capa h4 {
-  margin-top: 40px;
-  margin-bottom: 15px;
-} */
+
 .capa h4 {
   color: rgb(61, 61, 61);
   font-weight: 200;
@@ -83,6 +73,29 @@ section#reflexiones {
 }
 
 @media screen and (max-width: 1024px) {
+  .reflexiones-p2 {
+    font-size: 2vh;
+  }
+  .reflexiones-p1 {
+    font-size: 2vh;
+  }
+  .contenedor {
+    width: 40%;
+    margin: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .contenedor figure {
+    height: 120px;
+    width: 250px;
+  }
+  .capa h4 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +104,10 @@ section#reflexiones {
   }
   .reflexiones-p1 {
     font-size: 2.2vw;
+  }
+  .contenedor figure {
+    height: 100px;
+    width: 200px;
   }
   .articulo {
     font-size: 1.7vw;
@@ -104,7 +121,8 @@ section#reflexiones {
     font-size: 2.8vw;
   }
   .reflexiones-content {
-    max-width: 100vw;
+    width: 90%;
+    max-width: 90vw;
     height: 400px;
     margin-bottom: 5px;
     margin-top: 20px;
@@ -122,5 +140,9 @@ section#reflexiones {
     height: 150px;
     cursor: pointer;
     font-size: 3.3vw;
+  }
+  .contenedor figure {
+    height: 130px;
+    width: 250px;
   }
 }

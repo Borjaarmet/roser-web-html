@@ -4,11 +4,11 @@ section#header {
   position: relative;
   top: 80px;
   background-image: url("../Images//Roser\ Santonja\ HD\ \(22\).jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  zoom: unset;
   border-radius: 0 95% 95% 95% / 15%;
+  height: calc(100% -80px);
 }
 .header__text {
   text-align: center;

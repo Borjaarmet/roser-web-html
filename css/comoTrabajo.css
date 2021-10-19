@@ -35,7 +35,12 @@ section#comoTrabajo {
   opacity: 1;
   transform: translateX(-400px);
 }
-
+@media screen and (max-width: 1024px) {
+  .comoTrabajo__text {
+    text-align: justify;
+    font-size: 2.4vw;
+  }
+}
 @media screen and (max-width: 769px) {
   .comoTrabajo__text {
     text-align: justify;
@@ -64,6 +69,9 @@ section#comoTrabajo {
   }
 }
 @media screen and (max-width: 480px) {
+  section#comoTrabajo {
+    padding: 0 2%;
+  }
   .comoTrabajo__text {
     text-align: justify;
     font-size: 2.9vw;

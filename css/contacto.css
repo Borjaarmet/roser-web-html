@@ -115,12 +115,9 @@ form label span {
   color: #f0bf45;
 }
 
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 768px) {
   .form {
-    width: 420px;
+    width: 550px;
     height: 450px;
     padding: 10px 15px;
   }

@@ -1,0 +1,227 @@
+/* Slider */
+.ctn-slider {
+  margin-bottom: 50vh;
+}
+
+.ctn-slider .slider {
+  /* Se coloca para que no se dañe lo del attachment fixed en pantallas mas pequeñas */
+  cursor: pointer; /* Se deja de primero el pointer para explorer y en los demas navegadores por cascada lo sobre-escribe */
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  overflow: hidden;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 600;
+}
+
+.ctn-slider .slider:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+.ctn-slider .slider .slider-inner {
+  display: table;
+  left: 20;
+  position: relative;
+  top: 0;
+  transition: 1s ease;
+}
+
+.ctn-slider .slider .section-slider {
+  float: left;
+}
+
+.ctn-slider .slider .section-slider .img-slider:before {
+  height: 10vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.ctn-slider .slider .section-slider .img-slider {
+  align-items: center;
+  opacity: 0.6;
+  display: flex;
+  filter: grayscale(80%);
+  height: 40vh;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
+
+/* Imágenes slider inicio */
+.ctn-slider .slider .section-slider .slider-one {
+  background-image: url("../Images/Roser\ Santonja\ WEB\ \(1\).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ctn-slider .slider .section-slider .slider-two {
+  background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-escritorio.jpg");
+}
+
+.ctn-slider .slider .section-slider .slider-three {
+  background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-grupo-de-trabajo.jpg");
+}
+
+.ctn-slider .slider .section-slider .slider-four {
+  background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-ideas.jpg");
+}
+
+.ctn-slider .slider .section-slider .slider-five {
+  background-image: url("https://grupoamsi.com/Test-Grupo-Amsi/Test-Grupo-Amsi/img/imgs-general/sliders/slider-inicio/inicio-servidores.jpg");
+}
+
+/* Titulos slider */
+.ctn-slider .slider .section-slider .title-slider {
+  color: #ffffff;
+  font: normal 4em "Dancing Script", sans-serif;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000000;
+  top: 15px;
+  user-select: none;
+}
+
+/* Flechas del slider */
+.ctn-slider .slider-nav .arrows {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  padding: 2em;
+  position: absolute;
+  text-shadow: 1px 1px 5px #000000;
+  top: 55%;
+  transition: 0.3s ease all;
+  z-index: 600;
+  margin: 0 50px;
+}
+
+/* Flechas izquierda del slider */
+.ctn-slider .slider-nav .prev {
+  border-radius: 50% 0 0 50%;
+  left: 10px;
+}
+
+/* Flechas derecha del slider */
+.ctn-slider .slider-nav .next {
+  border-radius: 0 50% 50% 0;
+  right: 30px;
+}
+
+/* Efecto cuando le dan click a las flechas del slider */
+.ctn-slider .slider-nav .prev:active {
+  transform: translateX(-5px);
+}
+
+.ctn-slider .slider-nav .next:active {
+  transform: translateX(5px);
+}
+
+/* Flecha de ir a la siguiente sección */
+.ctn-slider .move-slider {
+  animation: jump-arrow 2.5s infinite;
+  bottom: 2%;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 600;
+}
+
+.ctn-slider .move-slider .arrow-down-slider {
+  cursor: pointer;
+}
+
+/* Efecto hover flecha de ir a la siguiente sección */
+.ctn-slider .move-slider .arrow-down-slider:hover,
+.ctn-slider .move-slider .arrow-down-slider:focus,
+.ctn-slider .move-slider .arrow-down-slider:active {
+  color: #ffffff;
+}
+
+/* Animación de las flechas que saltan para señalar a la siguiente sección */
+@keyframes jump-arrow {
+  0%,
+  20%,
+  55%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(0, -15px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+/* Responsive max-width and min-width */
+/* Responsive flechas y título del slider */
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+  /* Títulos del slider */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 760px) {
+  /* Títulos del slider */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 2em;
+    top: 0;
+  }
+
+  /* Flechas slider */
+  .ctn-slider .slider-nav .arrows {
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Títulos del slider */
+  .ctn-slider .slider .section-slider .title-slider {
+    font-size: 1.5em;
+    top: 0;
+  }
+
+  /* Flechas slider */
+  .ctn-slider .slider-nav .arrows {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .ctn-slider .slider-nav .prev {
+    left: 5px;
+  }
+
+  .ctn-slider .slider-nav .next {
+    right: 5px;
+  }
+}
+
+/* Efecto hover de las flechas del slider (desde mobiles grandes hasta pc) */
+@media screen and (min-width: 500px) {
+  .ctn-slider .slider-nav .arrows:hover,
+  .ctn-slider .slider-nav .arrows:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
